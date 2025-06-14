@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+</head>
+
+<body>
+    <div class="top_background">
+        <div class="content_body">
+
+            <!--             top navbar -->
+            <div class="top_navbar">
+                <div class="left_top_navbar">
+                    <div class="logo">Booking.com</div>
+                </div>
+                <div class="right_top_navbar">
+                    <input type="checkbox" id="click_currency">
+                    <label for="click_currency">
+                        <div class="currency content">NPR</div>
+                    </label>
+                    <div class="display_currency">
+                        <div class="top_text">
+                            <p id="first_text">Select Your Currency</p>
+                        </div>
+                        <div class="second_text">
+                            <p id="second_text">Where applicable prices will be converted to, and shown in, the currency
+                                that you select. The
+                                currency you pay in may differ based on your reservation, and a service fee may also
+                                apply.</p>
+                        </div>
+                        <div class="line_of_currency">
+                            <div class="currency_text">Japanese Yen
+                                (JPY)</div><input type="radio" name="currency">
+                            <div class="currency_text">Jordanian Dinar
+                                (JOD)</div> <input type="radio" name="currency">
+                            <div class="currency_text">Kazakhstani Tenge
+                                (KZT)</div><input type="radio" name="currency">
+                            <div class="currency_text">Kuwaiti Dinar
+                                (KWD)</div><input type="radio" name="currency">
+                            <div class="currency_text">Macanese Pataca
+                                (MOP)</div><input type="radio" name="currency">
+                        </div>
+                        <div class="line_of_currency">
+                            <div class="currency_text">Argentine Peso
+                                (ARS)</div><input type="radio" name="currency">
+                            <div class="currency_text">Australian Dollar
+                                (AUD)</div> <input type="radio" name="currency">
+                            <div class="currency_text">Azerbaijani Manat
+                                (AZN)</div><input type="radio" name="currency">
+                            <div class="currency_text">Bahraini Dinar
+                                (BHD)</div><input type="radio" name="currency">
+                            <div class="currency_text">Brazilian Real
+                                (BRL)</div><input type="radio" name="currency">
+                        </div>
+                        <div class="line_of_currency">
+                            <div class="currency_text">Bulgarian Lev
+                                (BGN)</div><input type="radio" name="currency">
+                            <div class="currency_text">Chilean Peso
+                                (CLP)</div> <input type="radio" name="currency">
+                            <div class="currency_text">Chinese Yuan
+                                (CNY)</div><input type="radio" name="currency">
+                            <div class="currency_text">Colombian Peso
+                                (COP)</div><input type="radio" name="currency">
+                            <div class="currency_text">Czech Koruna
+                                (CZK)</div><input type="radio" name="currency">
+                        </div>
+                        <div class="line_of_currency">
+                            <div class="currency_text">Danish Krone
+                                (DKK)</div><input type="radio" name="currency">
+                            <div class="currency_text">Egyptian Pound
+                                (EGP)</div> <input type="radio" name="currency">
+                            <div class="currency_text">Euro
+                                (EUR)
+                            </div><input type="radio" name="currency">
+                            <div class="currency_text">Fijian Dollar
+                                (FJD)</div><input type="radio" name="currency">
+                            <div class="currency_text">Georgian Lari
+                                (GEL)</div><input type="radio" name="currency">
+                        </div>
+                        <div class="line_of_currency">
+                            <div class="currency_text">Hong Kong Dollar
+                                (HKD)</div><input type="radio" name="currency">
+                            <div class="currency_text">Hungarian Forint
+                                (HUF)
+                            </div> <input type="radio" name="currency">
+                            <div class="currency_text">Icelandic Króna
+                                (ISK)
+                            </div><input type="radio" name="currency">
+                            <div class="currency_text">Indonesian Rupiah
+                                (IDR)</div><input type="radio" name="currency">
+                            <div class="currency_text">Israeli New Shekel
+                                (ILS)</div><input type="radio" name="currency">
+                        </div>
+                    </div>
+
+                    <div class="currency_list">
+                        <p>Select your currency</p>
+                    </div>
+                    <input type="checkbox" id="click_language">
+                    <label for="click_language">
+                        <div class="content">
+                            <i class="flag-icon flag-icon-us"></i>
+                        </div>
+                    </label>
+                    <div class="display_language">
+                        <div class="top_text">
+                            <p id="first_text">Select Your Language</p>
+                        </div>
+                        <div class="language_box">
+                            <div class="language">
+                                <div class="flag"><i class="flag-icon flag-icon-gb"></i></div>
+                                <div class="country">
+                                    <p>English (UK)</p>
+                                </div>
+                                <div class="check"><i class="fa-solid fa-check"></i></div>
+                            </div>
+                            <div class="language">
+                                <div class="flag"><i class="flag-icon flag-icon-us"></i></div>
+                                <div class="country">
+                                    <p>English (US)</p>
+                                </div>
+                                <div class="check"><i class="fa-solid fa-check"></i></div>
+                            </div>
+
+                            <div class="language">
+                                <div class="flag"><i class="flag-icon flag-icon-sn"></i></div>
+                                <div class="country">
+                                    <p>Senegal
+                                    </p>
+                                </div>
+                                <div class="check"><i class="fa-solid fa-check"></i></div>
+                            </div>
+                            <div class="language">
+                                <div class="flag"><i class="flag-icon flag-icon-nl"></i></div>
+                                <div class="country">
+                                    <p>Netherlands</p>
+                                </div>
+                                <div class="check"><i class="fa-solid fa-check"></i></div>
+                            </div>
+                            <div class="language">
+                                <div class="flag"><i class="flag-icon flag-icon-fr"></i></div>
+                                <div class="country">
+                                    <p>Français</p>
+                                </div>
+                                <div class="check"><i class="fa-solid fa-check"></i></div>
+                            </div>
+                            <div class="language">
+                                <div class="flag"><i class="flag-icon flag-icon-es"></i></div>
+                                <div class="country">
+                                    <p>Español</p>
+                                </div>
+                                <div class="check"><i class="fa-solid fa-check"></i></div>
+                            </div>
+                            <div class="language">
+                                <div class="flag"><i class="flag-icon flag-icon-sg"></i></div>
+                                <div class="country">
+                                    <p>Singapore</p>
+                                </div>
+                                <div class="check"><i class="fa-solid fa-check"></i></div>
+                            </div>
+                            <div class="language">
+                                <div class="flag"><i class="flag-icon flag-icon-so"></i></div>
+                                <div class="country">
+                                    <p>Somalia</p>
+                                </div>
+                                <div class="check"><i class="fa-solid fa-check"></i></div>
+                            </div>
+                            <div class="language">
+                                <div class="flag"><i class="flag-icon flag-icon-kp"></i></div>
+                                <div class="country">
+                                    <p>North Korea</p>
+                                </div>
+                                <div class="check"><i class="fa-solid fa-check"></i></div>
+                            </div>
+                            <div class="language">
+                                <div class="flag"><i class="flag-icon flag-icon-it"></i></div>
+                                <div class="country">
+                                    <p>Italiano</p>
+                                </div>
+                                <div class="check"><i class="fa-solid fa-check"></i></div>
+                            </div>
+                            <div class="language">
+                                <div class="flag"><i class="flag-icon flag-icon-pt"></i></div>
+                                <div class="country">
+                                    <p>Português (PT)</p>
+                                </div>
+                                <div class="check"><i class="fa-solid fa-check"></i></div>
+                            </div>
+                            <div class="language">
+                                <div class="flag"><i class="flag-icon flag-icon-ng"></i></div>
+                                <div class="country">
+                                    <p>Nigeria</p>
+                                </div>
+                                <div class="check"><i class="fa-solid fa-check"></i></div>
+                            </div>
+                            <div class="language">
+                                <div class="flag"><i class="flag-icon flag-icon-jp"></i></div>
+                                <div class="country">
+                                    <p>Japan
+                                    </p>
+                                </div>
+                                <div class="check"><i class="fa-solid fa-check"></i></div>
+                            </div>
+                            <div class="language">
+                                <div class="flag"><i class="flag-icon flag-icon-fi"></i></div>
+                                <div class="country">
+                                    <p>Suomi</p>
+                                </div>
+                                <div class="check"><i class="fa-solid fa-check"></i></div>
+                            </div>
+                            <div class="language">
+                                <div class="flag"><i class="flag-icon flag-icon-za"></i></div>
+                                <div class="country">
+                                    <p>South Africa
+                                    </p>
+                                </div>
+                                <div class="check"><i class="fa-solid fa-check"></i></div>
+                            </div>
+                            <div class="language">
+                                <div class="flag"><i class="flag-icon flag-icon-kr"></i></div>
+                                <div class="country">
+                                    <p>South Korea</p>
+                                </div>
+                                <div class="check"><i class="fa-solid fa-check"></i></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="language_list">
+                        <p>Select your language</p>
+                    </div>
+
+                    <div class="help content"><i class="fa-solid fa-question"></i></div>
+                    <div class="help_content">
+                        <p>Contact Customer Service</p>
+                    </div>
+                    <div class="property content">List Your Porperty </div>
+                    <a href="" class="content">Register</a>
+                    <a href="" class="content">Sign in</a>
+                </div>
+            </div>
+            <!-- second navbar -->
+            <div class="second_navbar">
+                <div class="second_navbar_content Stay">
+                    <i class="fa-solid fa-hotel"></i>
+                    <a href="">Stay</a>
+                </div>
+                <div class="second_navbar_content Flights">
+                    <i class="fa-solid fa-plane"></i>
+                    <a href="">Flights</a>
+                </div>
+                <div class="second_navbar_content Car">
+                    <i class="fa-solid fa-car"></i>
+                    <a href="">Car Rentals</a>
+                </div>
+                <div class="second_navbar_content Attractions">
+                    <i class="fa-solid fa-mountain-sun"></i>
+                    <a href="">Attractions</a>
+                </div>
+                <div class="second_navbar_content Taxis">
+                    <i class="fa-solid fa-taxi"></i>
+                    <a href="">Airport Taxis</a>
+                </div>
+            </div>
+
+            <!-- another line -->
+
+            <div class="text">
+                <p id="first_paragraph">Find your next stay</p>
+                <p id="second_paragraph">Search low prices on hotels, homes and much more... </p>
+            </div>
+
+            <!--         searchbar -->
+
+            <div class="searchbar">
+                <div class="searchbar_content">
+                    <i class="fa-solid fa-hotel"></i>
+                    <input type="search" placeholder="where are you going?">
+                </div>
+                <div class="searchbar_content">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <input type="text" placeholder="Check in - Check out">
+                </div>
+                <div class="searchbar_content">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="0 Adults 0 Children 0 room">
+                </div>
+                <div class="search">
+                    <p>Search</p>
+                </div>
+            </div>
+
+            <div class="headline">Offers
+                <div class="next_text">Promotions, deals and special offers for you
+                </div>
+            </div>
+
+            <!-- small banner -->
+
+            <div class="small_banner">
+                <div class="text_section">
+                    <div class="first_text_section">Go for a good time, not a long time
+
+                        <div class="next_text">Finish your year with a mini break. Save 15% or more when you book and
+                            stay by 7 January 2025.
+                        </div>
+                        <p>Find Late Escape Deals</p>
+                    </div>
+                </div>
+                <div class="image_section">
+                    <img src="first_image.jpeg" alt="">
+                </div>
+            </div>
+
+            <!-- browse by category -->
+
+            <div class="headline">
+                Browse by category
+            </div>
+
+            <div class="browse_image">
+                <div><img src="Browse by property/home.jpeg" alt="">
+                    <p>Home</p>
+                </div>
+                <div>
+                    <img src="Browse by property/apartment.jpeg" alt="">
+                    <p>Apartment</p>
+                </div>
+
+                <div> <img src="Browse by property/cabin.jpeg" alt="">
+                    <p>Cabin</p>
+                </div>
+                <div> <img src="Browse by property/cottage.jpeg" alt="">
+                    <p>Cottage</p>
+                </div>
+                <div><img src="Browse by property/glamping site.jpeg" alt="">
+                    <p>Glamping Site</p>
+                </div>
+                <div> <img src="Browse by property/guest house.jpeg" alt="">
+                    <p>Guest House</p>
+                </div>
+                <div> <img src="Browse by property/holiday home.jpeg" alt="">
+                    <p>Holiday Home</p>
+                </div>
+                <div> <img src="Browse by property/hostel.jpeg" alt="">
+                    <p>Hostel</p>
+                </div>
+                <div> <img src="Browse by property/motel.jpeg" alt="">
+                    <p>Motel</p>
+                </div>
+                <div> <img src="Browse by property/resort.jpeg" alt="">
+                    <p>Resort</p>
+                </div>
+                <div> <img src="Browse by property/serviced apartment.jpeg" alt="">
+                    <p>Serviced Apartment</p>
+                </div>
+                <div> <img src="Browse by property/villa.jpeg" alt="">
+                    <p>Villa</p>
+                </div>
+            </div>
+
+            <div class="trending_destination">
+                <span style=" font-size: 1.5rem; font-weight: bolder;">Trending destinations</span>
+                <p><span style="font-weight: 500;">Most popular choices for travellers from Nepal</span></p>
+                <div class="trending_destination_image">
+                    <div class="image" id="Kathmandu">
+                        <img src="Trending Destination/Kathmandu.jpg" alt="">
+                        <div class="destination">
+                            <p>Kathmandu</p>
+                            <i class="flag-icon flag-icon-np"></i>
+                        </div>
+                    </div>
+                    <div class="image" id="Dubai">
+                        <img src="Trending Destination/Dubai.jpg" alt="">
+                        <div class="destination">
+                            <p>Dubai</p>
+                            <i class="flag-icon flag-icon-ae"></i>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="Trending Destination/Pokhara.jpg" alt="">
+                        <div class="destination">
+                            <p>Pokhara</p> <i class="flag-icon flag-icon-np"></i>
+
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="Trending Destination/Bangkok.jpg" alt="">
+                        <div class="destination">
+                            <p>Bangkok</p> <i class="flag-icon flag-icon-th"></i>
+
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="Trending Destination/New Delhi.jpg" alt="">
+                        <div class="destination">
+                            <p>New Delhi</p> <i class="flag-icon flag-icon-us"></i>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="margin:30px 0;">
+                <span style="font-size: 1.5rem; font-weight: bold;">Quick and easy trip planner</span>
+                <span style="font-weight: bold;">
+                    <p>Pick a vibe and explore the top destinations in Nepal
+                </span>
+                </p>
+            </div>
+            <div class="vibe">
+                <div class="vibe_category Outdoor">
+                    <i class="fa-solid fa-person-hiking"></i>
+                    <p>Outdoor</p>
+                </div>
+                <div class="vibe_category">
+                    <i class="fa-solid fa-city"></i>
+                    <p>City</p>
+                </div>
+                <div class="vibe_category">
+                    <i class="fa-solid fa-heart"></i>
+                    <p>Romance</p>
+                </div>
+            </div>
+            <div class="places">
+                <div class="place">
+                    <img src="Places/Pokhara.jpg" alt="">
+                    <span style="margin-left: 15px; font-weight: bold;">Pokhara</span>
+                    <p>
+                        <span style="margin-left: 15px;">19 km away</span>
+
+                    </p>
+                </div>
+                <div class="place">
+                    <img src="Places/Bandipur.jpg" alt="">
+                    <span style="margin-left: 15px; font-weight: bold;">Bandipur</span>
+                    <p> <span style="margin-left: 15px;">37 km away</span>
+                    </p>
+                </div>
+                <div class="place">
+                    <img src="Places/Dhulikhel.jpg" alt="">
+                    <span style="margin-left: 15px; font-weight: bold;">Dhulikhel</span>
+                    <p> <span style="margin-left: 15px;">68 km away</span> </p>
+                </div>
+                <div class="place">
+                    <img src="Places/Nagarkot.jpg" alt="">
+                    <span style="margin-left: 15px; font-weight: bold;">Nagarkot</span>
+                    <p> <span style="margin-left: 15px;">148 km away</span> </p>
+                </div>
+                <div class="place">
+                    <img src="Places/Sauraha.jpg" alt="">
+                    <span style="margin-left: 15px; font-weight: bold;">Sauraha</span>
+                    <p> <span style="margin-left: 15px;">154 km away</span> </p>
+                </div>
+            </div>
+
+            <div style="margin:40px 0;">
+                <span style="font-size: 1.5rem; font-weight: bold;">Deals for the weekend</span>
+                <span style="font-weight: bold;">
+                    <p>Save on stays for 15 November - 17 November
+                </span>
+                </p>
+            </div>
+            <div class="places">
+                <div class="deal_place">
+                    <img src="Places/Bandipur.jpg" alt="">
+                    <span style="margin-left: 15px; font-weight: bold;">Drishya Nepal</span>
+                    <p> <span style="margin-left: 15px;">Kathmandu, Nepal</span>
+                    </p>
+                    <div class="rating">
+                        <p><span style="padding: 3px; background-color: #003b95; border-radius: 5px;">8.5</span></p>
+                        <p><span style="margin:0 10px;">Fabulos</span></p>
+                        <p>66 reviews</p>
+                    </div>
+                    <p><span style="margin: 15px; padding: 3px; background-color: #008234; border-radius: 5px;">Last
+                            Escape Deal</span></p>
+                    <div class="price">
+                        <p>2 nights</p>
+                        <p><span style="text-decoration: line-through; color: red;">US $130</span></p>
+                        <p><span style="font-weight: bold;">US $59</span></p>
+                    </div>
+                </div>
+                <div class="deal_place">
+                    <img src="Places/Dhulikhel.jpg" alt="">
+                    <span style="margin-left: 15px; font-weight: bold;">Hotel Middle Path & Spa</span>
+                    <p> <span style="margin-left: 15px;">Pokhara, Nepal</span> </p>
+                    <div class="rating">
+                        <p><span style="padding: 3px; background-color: #003b95; border-radius: 5px;">9.3</span></p>
+                        <p><span style="margin:0 10px;">Superb</span></p>
+                        <p>2,455 reviews</p>
+                    </div>
+                    <p><span style="margin: 15px; padding: 3px; background-color: #008234; border-radius: 5px;">Last
+                            Escape Deal</span></p>
+                    <div class="price">
+                        <p>2 nights</p>
+                        <p><span style="text-decoration: line-through; color: red;">US $130</span></p>
+                        <p><span style="font-weight: bold;">US $104</span></p>
+                    </div>
+                </div>
+                <div class="deal_place">
+                    <img src="Places/Nagarkot.jpg" alt="">
+                    <span style="margin-left: 15px; font-weight: bold;">Tiger Corner Inn Homestay</span>
+                    <p> <span style="margin-left: 15px;">Sauraha, Nepal</span> </p>
+                    <div class="rating">
+                        <p><span style="padding: 3px; background-color: #003b95; border-radius: 5px;">9.4</span></p>
+                        <p><span style="margin:0 10px;">Superb</span></p>
+                        <p>278 reviews</p>
+                    </div>
+                    <div style="margin-top:30px;"> </div>
+                    <div class="price">
+                        <p>2 nights</p>
+                        <p><span style="text-decoration: line-through; color: red;">US $13</span></p>
+                        <p><span style="font-weight: bold;">US $11</span></p>
+                    </div>
+                </div>
+                <div class="deal_place">
+                    <img src="Places/Sauraha.jpg" alt="">
+                    <span style="margin-left: 15px; font-weight: bold;">Hotel Shree Tara</span>
+                    <p> <span style="margin-left: 15px;">Kathmandu, Nepal</span> </p>
+                    <div class="rating">
+                        <p><span style="padding: 3px; background-color: #003b95; border-radius: 5px;">8.3</span></p>
+                        <p><span style="margin:0 10px;">Very Good</span></p>
+                        <p>612 reviews</p>
+                    </div>
+                    <p><span style="margin: 15px; padding: 3px; background-color: #008234; border-radius: 5px;">Last
+                            Escape Deal</span></p>
+                    <div class="price">
+                        <p>2 nights</p>
+                        <p><span style="text-decoration: line-through; color: red;">US $70</span></p>
+                        <p><span style="font-weight: bold;">US $28</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="headline">
+                Get inspiration for your next trip
+            </div>
+            <div class="places">
+                <div class="explore_place diff_image">
+                    <img src="Explore Places/new.webp" alt="">
+                    <div class="text_over">
+                        <span style=" font-weight: bold; font-size: 1.5em; color: white;">
+                            New Year’s Eve in New York City</span>
+                        <p style="margin-top: 10px; color: white;">
+                            Ring in the new year with iconic moments and unforgettable
+                            memories in New York City
+                        </p>
+                    </div>
+                </div>
+                <div class="explore_place">
+                    <img src="Explore Places/japan.webp" alt="">
+                    <span style=" font-weight: bold;">6 best ryokans in Japan to rejuvenate yourself</span>
+                    <p style="margin-top: 10px;">Discover unmissable ryokans to relax and unwind in style.
+                    </p>
+                </div>
+                <div class="explore_place">
+                    <img src="Explore Places/asia.webp" alt="">
+                    <span style="font-weight: bold;">7 best places in Asia to celebrate Christmas</span>
+                    <p style="margin-top: 10px;">Discover the shimmering lights and festive sights of Asia’s holiday
+                        season</p>
+                </div>
+
+            </div>
+            <div style="margin:40px 0;">
+                <span style="font-size: 1.5rem; font-weight: bold;">Stay at our top unique properties</span>
+                <span style="font-weight: bold;">
+                    <p>From castles and villas to boats and igloos, we've got it all
+                </span>
+                </p>
+            </div>
+            <div class="places">
+                <div class="unique_property">
+                    <img src="Places/Bandipur.jpg" alt="">
+                    <span style="margin-left: 15px; font-weight: bold;">Domki Wierszyki Shelters</span>
+                    <p> <span style="margin-left: 15px;">Poland, Zakopane</span>
+                    </p>
+                    <div class="rating">
+                        <p><span style="padding: 3px; background-color: #003b95; border-radius: 5px;">9.8</span></p>
+                        <p><span style="margin:0 10px;">Exceptional</span></p>
+                        <p>95 reviews</p>
+                    </div>
+                </div>
+                <div class="unique_property">
+                    <img src="Places/Dhulikhel.jpg" alt="">
+                    <span style="margin-left: 15px; font-weight: bold;">Ranczo w Dolinie</span>
+                    <p> <span style="margin-left: 15px;">Poland, Kiszkowo</span> </p>
+                    <div class="rating">
+                        <p><span style="padding: 3px; background-color: #003b95; border-radius: 5px;">9.3</span></p>
+                        <p><span style="margin:0 10px;">Exceptional</span></p>
+                        <p>186 reviews</p>
+                    </div>
+                </div>
+                <div class="unique_property">
+                    <img src="Places/Nagarkot.jpg" alt="">
+                    <span style="margin-left: 15px; font-weight: bold;">Tiny House Dreischwesternherz</span>
+                    <p> <span style="margin-left: 15px;">Germany, Trier</span> </p>
+                    <div class="rating">
+                        <p><span style="padding: 3px; background-color: #003b95; border-radius: 5px;">9.4</span></p>
+                        <p><span style="margin:0 10px;">Exceptional</span></p>
+                        <p>167 reviews</p>
+                    </div>
+                </div>
+                <div class="unique_property">
+                    <img src="Places/Sauraha.jpg" alt="">
+                    <span style="margin-left: 15px; font-weight: bold;">Das rote Haus hinterm Deich</span>
+                    <p> <span style="margin-left: 15px;">Germany, Simonsberg</span> </p>
+                    <div class="rating">
+                        <p><span style="padding: 3px; background-color: #003b95; border-radius: 5px;">9.4</span></p>
+                        <p><span style="margin:0 10px;">Superb</span></p>
+                        <p>47 reviews</p>
+                    </div>
+                </div>
+            </div>
+            <div style="margin:40px 0; display: flex; justify-content: space-between; align-items: center;">
+                <span style="font-size: 1.5rem; font-weight: bold;">Homes guests love</span>
+                <a href="" style="text-decoration: none; font-weight: bold;">Discover Homes</a>
+            </div>
+            <div class="places">
+                <div class="home_guests">
+                    <img src="Home Guests/a.webp" alt="">
+                    <span style=" font-weight: bold;">Aparthotel Stare Miasto</span>
+                    <p>Old Town, Poland, Kraków
+                    </p>
+                    <div class="rating">
+                        <p><span style="padding: 3px; background-color: #003b95; border-radius: 5px;">8.8</span></p>
+                        <p><span style="margin:0 10px;">Fabulos</span></p>
+                        <p>950 reviews</p>
+                    </div>
+                    <div class="price">
+                        <p>Starting from</p>
+                        <p><span style="font-weight: bold; margin-left: 10px;">US $59</span></p>
+                    </div>
+                </div>
+                <div class="home_guests">
+                    <img src="Home Guests/b.webp" alt="">
+                    <span style="font-weight: bold;">7Seasons Apartments Budapest</span>
+                    <p>06. Terézváros, Hungary, Budapest</p>
+                    <div class="rating">
+                        <p><span style="padding: 3px; background-color: #003b95; border-radius: 5px;">9.3</span></p>
+                        <p><span style="margin:0 10px;">Exceptional</span></p>
+                        <p>186 reviews</p>
+                    </div>
+                    <div class="price">
+                        <p>Starting from</p>
+                        <p><span style="font-weight: bold; margin-left: 10px;">US $29</span></p>
+                    </div>
+                </div>
+                <div class="home_guests">
+                    <img src="Home Guests/c.webp" alt="">
+                    <span style="font-weight: bold;">Oriente Palace Apartments</span>
+                    <p>Centro, Spain, Madrid</p>
+                    <div class="rating">
+                        <p><span style="padding: 3px; background-color: #003b95; border-radius: 5px;">9.4</span></p>
+                        <p><span style="margin:0 10px;">Exceptional</span></p>
+                        <p>167 reviews</p>
+                    </div>
+                    <div class="price">
+                        <p>Starting from</p>
+                        <p><span style="font-weight: bold; margin-left: 10px;">US $70</span></p>
+                    </div>
+
+                </div>
+                <div class="home_guests">
+                    <img src="Home Guests/d.webp" alt="">
+                    <span style="font-weight: bold;">Numa I Vita Apartments</span>
+                    <p>Santa Maria Novella, Italy, Florence</p>
+                    <div class="rating">
+                        <p><span style="padding: 3px; background-color: #003b95; border-radius: 5px;">9.4</span></p>
+                        <p><span style="margin:0 10px;">Superb</span></p>
+                        <p>47 reviews</p>
+                    </div>
+                    <div class="price">
+                        <p>Starting from</p>
+                        <p><span style="font-weight: bold; margin-left: 10px;">US $19</span></p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div style="margin:30px 0;">
+                <span style="font-size: 1.5rem; font-weight: bold;">Popular with travellers from Nepal</span>
+            </div>
+            <div class="popular_from_nepal">
+                <div class="popular Outdoor">
+                    <p>Domestic Cities</p>
+                </div>
+                <div class="popular">
+                    <p>International Cities</p>
+                </div>
+                <div class="popular">
+                    <p>Regions</p>
+                </div>
+                <div class="popular">
+                    <p>Countries</p>
+                </div>
+                <div class="popular">
+                    <p>Place to stay</p>
+                </div>
+            </div>
+
+            <div class="hotel_list">
+                <div class="list">
+                    <a href="">Pokhara Hotels</a>
+                    <a href="">Bhaktapur Hotels</a>
+                    <a href="">Bhairawa Hotels</a>
+                    <a href="">Jomsom Hotels</a>
+                    <a href="">Narayanghat Hotels</a>
+                </div>
+                <div class="list">
+                    <a href="">Kathmandu Hotels</a>
+                    <a href="">Lumbini Hotels</a>
+                    <a href="">Butwal Hotels</a>
+                    <a href="">Pharping Hotels</a>
+                    <a href="">Charikot Hotels</a>
+                </div>
+                <div class="list">
+                    <a href="">Nagarkot Hotels</a>
+                    <a href="">Bandipur Hotels</a>
+                    <a href="">Itahari Hotels</a>
+                    <a href="">Jawlakhel Hotels</a>
+                    <a href="">Bharatpur Hotels</a>
+                </div>
+                <div class="list">
+                    <a href="">Sauraha Hotels</a>
+                    <a href="">Chitwan Hotels</a>
+                    <a href="">Biratnagar Hotels</a>
+                    <a href="">Janakpur Hotels</a>
+                    <a href="">Kakani Hotels</a>
+                </div>
+                <div class="list">
+                    <a href="">Dhulikhel Hotels</a>
+                    <a href="">Patan Hotels</a>
+                    <a href="">Beni Hotels</a>
+                    <a href="">Tansen Hotels</a>
+                    <a href="">Syabru Bensi Hotels</a>
+                </div>
+            </div>
+
+            <div class="all_list">
+                <a href=""></a>
+                <a href="">Countries</a>
+                <a href="">Regions</a>
+                <a href="">Cities</a>
+                <a href="">Districts</a>
+                <a href="">Airports</a>
+                <a href="">Hotels</a>
+                <a href="">Places of interest</a>
+                <a href="">Holiday Homes</a>
+                <a href="">Apartments</a>
+                <a href="">Resorts</a>
+                <a href="">Villas</a>
+                <a href="">Hostels</a>
+                <a href="">B&Bs</a>
+                <a href="">Guest Houses</a>
+                <a href="">Unique places to stay</a>
+                <a href="">All destinations</a>
+                <a href="">All flight destinations</a>
+                <a href="">All car hire locations</a>
+                <a href="">All holiday destinations</a>
+                <a href="">Guides</a>
+                <a href="">Discover</a>
+                <a href="">Reviews</a>
+                <a href="">Discover monthly stays</a>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="content_body">
+                <div class="hotel_list">
+                    <div class="list">
+                        <p>Support</p>
+                        <a href="">Coronavirus (COVID-19) FAQs</a>
+                        <a href="">Manage your trips</a>
+                        <a href="">Contact Customer Service</a>
+                        <a href="">Jomsom Hotels</a>
+                        <a href="">Safety resource centre</a>
+                    </div>
+                    <div class="list">
+                        <p>Discover</p>
+                        <a href="">Genius loyalty programme</a>
+                        <a href="">Seasonal and holiday deals</a>
+                        <a href="">Travel articles </a>
+                        <a href="">Booking.com for Business</a>
+                        <a href="">Traveller Review Awards</a>
+                        <a href="">Car hire</a>
+                        <a href="">Flight finder</a>
+                        <a href="">Restaurant reservations</a>
+                        <a href="">Booking.com for Travel Agents</a>
+                    </div>
+                    <div class="list">
+                        <p>Terms and settings</p>
+                        <a href="">Privacy & cookies</a>
+                        <a href="">Terms and conditions</a>
+                        <a href="">Partner dispute</a>
+                        <a href="">Modern Slavery Statement</a>
+                        <a href="">Human Rights Statement</a>
+                    </div>
+                    <div class="list">
+                        <p>Partners</p>
+                        <a href="">Extranet login</a>
+                        <a href="">Partner help</a>
+                        <a href="">List your property</a>
+                        <a href="">Become an affiliate
+                        </a>
+                    </div>
+                    <div class="list">
+                        <p>About</p>
+                        <a href="">About Booking.com</a>
+                        <a href="">How we work</a>
+                        <a href="">Sustainability</a>
+                        <a href="">Press centre</a>
+                        <a href="">Careers</a>
+                        <a href="">Investor relations</a>
+                        <a href="">Corporate contact</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="footer_text">
+                    <p>
+                        Booking.com is part of Booking Holdings Inc., the world leader in online travel and related
+                        services.
+                    </p>
+                    <p>Copyright © 1996–2024 Booking.com™. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+</body>
+
+</html>
